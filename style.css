@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+}
+
+.body_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+  background-color: rgb(212, 211, 211);
+  background-image: url("Windows-11-Wallpaper.jpg");
+  background-size: cover;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+li {
+  display: none;
+}
+
+li.hidden {
+  opacity: 0;
+} 
+
+.li-show {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 3px 10px;
+  align-items: center;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+  transition: all 1s ease;
+  animation: showBlock 1s linear forwards;
+}
+
+.checkInput {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+li > p {
+  flex-grow: 1;
+  padding-left: 35px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+h1 {
+  position: relative;
+}
+
+.some {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.remove-btn {
+  background-color: #424242;
+  border: none;
+  padding: 5px 10px;
+  transition: 0.3s linear;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.remove-btn:hover {
+  background-color: #9c9c9c;
+  color: #000;
+}
+
+.main {
+  position: absolute;
+  top: 60px;
+  margin: 0 auto;
+  width: 800px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0px 18px 34px 15px rgba(66, 68, 90, 1);
+}
+
+/* @keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+.input-text {
+  width: calc(100% - 75px);
+  border: 1px solid black;
+  background: transparent;
+  padding: 0.32rem 0.75rem;
+  transition: all 0.2s linear;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.input-btn {
+  width: 75px;
+  background: transparent;
+  justify-content: center;
+  background-color: #424242;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.input-btn:hover {
+  background-color: #9c9c9c;
+  color: #000;
+}
