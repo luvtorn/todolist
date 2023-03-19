@@ -17,16 +17,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="body_hide">
+  <body>
     <div class="main">
       <h1>Welcome</h1> 
       <div class="some" style="width: 100%;">
-          <input type="text" class="input-text" required placeholder="Напишите свой список дел, которые вы еще не успели сделать!" />
+          <input type="text" id="error_input" class="input-text" placeholder="Напишите свой список дел, которые вы еще не успели сделать!" />
           <button class="input-btn">Add</button>
       </div>
+      <p class="error_label hide">Не может быть пустое поле</p>
       <ol></ol>
+  </div>
 
-      
+  <div class="submit_remove hide">
+    <p>Вы уверены, что хотите удалить данное задание?</p>
+    <input type="button" value="Да" class="remove-confirm">
+    <input type="button" value="Отмена" class="remove-cancel">
   </div>
 
     <script src="script.js"></script>
