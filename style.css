@@ -131,6 +131,7 @@ h1 {
   border: 1px solid black;
   transition: all .1s linear;
   border-radius: 10px;
+  background-color: #fff;
 }
 
 /* .submit_remove input:hover {
