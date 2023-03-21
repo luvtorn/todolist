@@ -58,20 +58,20 @@ inputBtn.addEventListener("click",  function () {
       const submitRemove = document.querySelector(".submit_remove")
       const removeConfirm = document.querySelector(".remove-confirm")
       const removeCancel = document.querySelector(".remove-cancel")
-      const mainTodos = document.querySelector(".main")
+      const todoBackground = document.querySelector(".bg")
 
       submitRemove.classList.remove("hide")
-      mainTodos.style.filter = "blur(5px)"
+      todoBackground.style.filter = "blur(5px)"
 
       removeConfirm.addEventListener("click", () => {
         submitRemove.classList.add("hide")
-        mainTodos.style.filter = "blur(0)"
+        todoBackground.style.filter = "blur(0)"
         li.style.display = "none"
       })
 
       removeCancel.addEventListener("click", () => {
         submitRemove.classList.add("hide")
-        mainTodos.style.filter = "blur(0)"
+        todoBackground.style.filter = "blur(0)"
       })
     })
 
