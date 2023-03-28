@@ -1,3 +1,4 @@
+AOS.init();
 const inputBtn = document.querySelector(".input-btn");
 const inputText = document.querySelector(".input-text");
 
@@ -32,7 +33,8 @@ inputBtn.addEventListener("click",  function () {
   } else {
     errorLabel.classList.add("hide")
     const li = document.createElement("li");
-    li.classList.add("li-show");
+    // li.classList.add("li-show");
+    li.setAttribute("data-aos", "fade-right")
 
     const p = document.createElement("p");
 
@@ -89,35 +91,3 @@ inputBtn.addEventListener("click",  function () {
   // ]
   }
 });
-
-
-// document.body.addEventListener('keydown', (event) => {
-//   console.log(event.code)
-// })
-
-// const lalala = document.querySelector(".hahaha")
-// const pressMeButton = document.querySelector(".press-me")
-// pressMeButton.addEventListener('click', () => {
-//   if (lalala.className === "hahaha") {
-//     lalala.className = "hahaha my-hidden"
-//   } else {
-//     lalala.className = "hahaha"
-//   }
-// })
-
-
-// const arr1 = [1, 2, 3]
-
-// todosJSON = JSON.stringify(arr1)
-// localStorage.setItem("todos", todosJSON) // '[1, 2, 3]' => [1, 2, 3]
-
-
-
-// const todos = JSON.parse(localStorage.getItem("todos"))
-// console.log(typeof todos)
-
-// if ("0" == 0) { 
-//   console.log(1)
-// }
-
-// console.log(1 + "0")// => 10 (string)
