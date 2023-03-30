@@ -29,19 +29,18 @@ input[type="checkbox"] {
 }
 
 
-/* @keyframes showBlock {
+@keyframes showBlock {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
-} */
+}
 
-
-/* li {
+li {
   display: none;
-} */
+}
 
 li {
   display: flex;
@@ -93,11 +92,42 @@ h1 {
   color: #000;
 }
 
+.dark {
+  background-color: #282d28;
+  color: #fff;
+}
 
-.main {
+.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.theme {
+}
+
+.light-button {
+  width: 40px;
+  height: 40px;
+  background-image: url(1687686.png);
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dark-button {
+  width: 40px;
+  height: 40px;
+  background-image: url(brightness.png);
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.main{
   margin: 0 auto;
   width: 800px;
-  background-color: #fff;
   border-radius: 20px;
   padding: 30px;
   box-shadow: 0px 18px 34px 15px rgba(66, 68, 90, 1);
@@ -107,7 +137,6 @@ h1 {
 
 .submit_remove{
   position: fixed;
-  background-color: #ddd;
   width: 300px;
   height: 110px;
   top: 35%;
@@ -125,7 +154,6 @@ h1 {
   border: 1px solid black;
   transition: all .1s linear;
   border-radius: 10px;
-  background-color: #fff;
 }
 
 /* .submit_remove input:hover {
@@ -135,7 +163,6 @@ h1 {
 .submit_remove input:active {
   box-shadow: 4px 8px 25px -3px rgba(66, 68, 90, 1);
   outline: none;
-  background-color: #ddd;
 }
 
 .submit_remove p {

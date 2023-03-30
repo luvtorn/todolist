@@ -11,7 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
       rel="stylesheet"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Todo list</title>
 
     <!-- Custom Styles -->
@@ -20,7 +19,11 @@
 
   <body>
     <div class="bg">
-      <div class="main" data-aos="zoom-in">
+      <div class="main light">
+        <div class="theme">
+          <button class="light-button"></button>
+          <button class="dark-button hide"></button>
+        </div>
         <h1>Welcome</h1> 
         <div class="inputs">
             <input type="text" id="error_input" class="input-text" placeholder="Напиши свое задание" />
@@ -31,7 +34,7 @@
       </div>
     </div>
 
-    <div class="submit_remove hide">
+    <div class="submit_remove hide light">
       <p>Вы уверены, что хотите удалить данное задание?</p>
       <input type="button" value="Да" class="remove-confirm">
       <input type="button" value="Отмена" class="remove-cancel">

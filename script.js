@@ -1,6 +1,12 @@
-AOS.init();
+
 const inputBtn = document.querySelector(".input-btn");
 const inputText = document.querySelector(".input-text");
+const main = document.querySelector(".main")
+
+const submitRemove = document.querySelector(".submit_remove")
+const removeConfirm = document.querySelector(".remove-confirm")
+const removeCancel = document.querySelector(".remove-cancel")
+const todoBackground = document.querySelector(".bg")
 
 inputText.focus()
 
@@ -8,6 +14,27 @@ document.addEventListener("keydown", (event) => {
   if(event.key === "Enter") {
     inputBtn.click()
   }
+})
+
+const changeLight = document.querySelector(".light-button")
+const changeDark = document.querySelector(".dark-button")
+
+changeLight.addEventListener("click", () => {
+  main.classList.remove("light")
+  main.classList.add("dark")
+  submitRemove.classList.remove("light")
+  submitRemove.classList.add("dark")
+  changeLight.classList.add("hide")
+  changeDark.classList.remove("hide")
+})
+
+changeDark.addEventListener("click", () => {
+  main.classList.remove("dark")
+  main.classList.add("light")
+  submitRemove.classList.remove("dark")
+  submitRemove.classList.add("light")
+  changeDark.classList.add("hide")
+  changeLight.classList.remove("hide")
 })
 
 
@@ -33,8 +60,7 @@ inputBtn.addEventListener("click",  function () {
   } else {
     errorLabel.classList.add("hide")
     const li = document.createElement("li");
-    // li.classList.add("li-show");
-    li.setAttribute("data-aos", "fade-right")
+    li.classList.add("li-show");
 
     const p = document.createElement("p");
 
@@ -57,10 +83,6 @@ inputBtn.addEventListener("click",  function () {
     });
 
     remove.addEventListener("click", () => {
-      const submitRemove = document.querySelector(".submit_remove")
-      const removeConfirm = document.querySelector(".remove-confirm")
-      const removeCancel = document.querySelector(".remove-cancel")
-      const todoBackground = document.querySelector(".bg")
 
       submitRemove.classList.remove("hide")
       todoBackground.style.filter = "blur(5px)"
