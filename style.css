@@ -95,14 +95,13 @@ h1 {
 .dark {
   background-color: #282d28;
   color: #fff;
+  transition: all .3s linear;
 }
 
 .light {
   background-color: #fff;
   color: #000;
-}
-
-.theme {
+  transition: all .3s linear;
 }
 
 .light-button {
