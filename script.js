@@ -25,6 +25,8 @@ changeLight.addEventListener("click", () => {
   submitRemove.classList.remove("light")
   submitRemove.classList.add("dark")
   changeLight.classList.add("hide")
+  inputText.classList.remove("light")
+  inputText.classList.add("dark")
   changeDark.classList.remove("hide")
 })
 
@@ -33,6 +35,8 @@ changeDark.addEventListener("click", () => {
   main.classList.add("light")
   submitRemove.classList.remove("dark")
   submitRemove.classList.add("light")
+  inputText.classList.remove("dark")
+  inputText.classList.add("light")
   changeDark.classList.add("hide")
   changeLight.classList.remove("hide")
 })
