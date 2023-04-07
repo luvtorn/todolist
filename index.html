@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/ " />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,35 +12,39 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
       rel="stylesheet"
     /> -->
-    <title>Todo list</title>
+  <title>Todo list</title>
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-  <body>
-    <div class="bg">
-      <div class="main light">
-        <div class="theme">
-          <button class="light-button"></button>
-          <button class="dark-button hide"></button>
-        </div>
-        <h1>Welcome</h1> 
-        <div class="inputs">
-            <input type="text" id="error_input" class="input-text light" placeholder="Напиши свое задание" />
-            <button class="input-btn">Add</button>
-        </div>
-        <p class="error_label hide">Не может быть пустое поле</p>
-        <ol></ol>
+<body>
+  <div class="bg">
+    <div class="main light">
+      <div class="theme">
+        <button class="light-button"></button>
+        <button class="dark-button hide"></button>
       </div>
+      <h1>Welcome</h1>
+      <div class="inputs">
+        <input type="text" id="error_input" class="input-text light" placeholder="Напиши свое задание" />
+        <button class="input-btn">Add</button>
+      </div>
+      <p class="error_label hide">Не может быть пустое поле</p>
+      <ol></ol>
     </div>
+  </div>
 
-    <div class="submit_remove hide light">
+  <div class="remove hide light">
+    <div class="submit_remove">
       <p>Вы уверены, что хотите удалить данное задание?</p>
       <input type="button" value="Да" class="remove-confirm">
       <input type="button" value="Отмена" class="remove-cancel">
     </div>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

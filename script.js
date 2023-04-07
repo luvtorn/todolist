@@ -3,7 +3,7 @@ const inputBtn = document.querySelector(".input-btn");
 const inputText = document.querySelector(".input-text");
 const main = document.querySelector(".main")
 
-const submitRemove = document.querySelector(".submit_remove")
+const submitRemove = document.querySelector(".remove")
 const removeConfirm = document.querySelector(".remove-confirm")
 const removeCancel = document.querySelector(".remove-cancel")
 const todoBackground = document.querySelector(".bg")
