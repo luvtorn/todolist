@@ -146,6 +146,7 @@ h1 {
   top: 0;
   left: 0;
   z-index: 1000;
+  background: transparent;
 }
 
 .submit_remove{
@@ -159,6 +160,7 @@ h1 {
   z-index: 100;
   text-align: center;
   border-radius: 10px;
+  
 }
 
 .submit_remove input {

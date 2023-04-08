@@ -3,7 +3,8 @@ const inputBtn = document.querySelector(".input-btn");
 const inputText = document.querySelector(".input-text");
 const main = document.querySelector(".main")
 
-const submitRemove = document.querySelector(".remove")
+const submitRemove = document.querySelector(".submit_remove")
+const removeWindow = document.querySelector(".remove")
 const removeConfirm = document.querySelector(".remove-confirm")
 const removeCancel = document.querySelector(".remove-cancel")
 const todoBackground = document.querySelector(".bg")
@@ -88,17 +89,17 @@ inputBtn.addEventListener("click",  function () {
 
     remove.addEventListener("click", () => {
 
-      submitRemove.classList.remove("hide")
+      removeWindow.classList.remove("hide")
       todoBackground.style.filter = "blur(5px)"
 
       removeConfirm.addEventListener("click", () => {
-        submitRemove.classList.add("hide")
+        removeWindow.classList.add("hide")
         todoBackground.style.filter = "blur(0)"
         li.style.display = "none"
       })
 
       removeCancel.addEventListener("click", () => {
-        submitRemove.classList.add("hide")
+        removeWindow.classList.add("hide")
         todoBackground.style.filter = "blur(0)"
       })
     })
