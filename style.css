@@ -99,7 +99,7 @@ h1 {
 }
 
 .dark {
-  background-color: #282d28;
+  background-color: #3d3d3d;
   color: #fff;
   transition: all .3s linear;
 }
@@ -160,7 +160,7 @@ h1 {
   z-index: 100;
   text-align: center;
   border-radius: 10px;
-  
+  padding: 5px 10px;
 }
 
 .submit_remove input {
@@ -242,10 +242,7 @@ h1 {
 }
 .input-btn {
   width: 75px;
-  background: transparent;
   justify-content: center;
-  background-color: #424242;
-  color: #fff;
   border: none;
   cursor: pointer;
   transition: all 0.3s linear;

@@ -3,6 +3,7 @@ const inputBtn = document.querySelector(".input-btn");
 const inputText = document.querySelector(".input-text");
 const main = document.querySelector(".main")
 
+
 const submitRemove = document.querySelector(".submit_remove")
 const removeWindow = document.querySelector(".remove")
 const removeConfirm = document.querySelector(".remove-confirm")
@@ -19,28 +20,6 @@ document.addEventListener("keydown", (event) => {
 
 const changeLight = document.querySelector(".light-button")
 const changeDark = document.querySelector(".dark-button")
-
-changeLight.addEventListener("click", () => {
-  main.classList.remove("light")
-  main.classList.add("dark")
-  submitRemove.classList.remove("light")
-  submitRemove.classList.add("dark")
-  changeLight.classList.add("hide")
-  inputText.classList.remove("light")
-  inputText.classList.add("dark")
-  changeDark.classList.remove("hide")
-})
-
-changeDark.addEventListener("click", () => {
-  main.classList.remove("dark")
-  main.classList.add("light")
-  submitRemove.classList.remove("dark")
-  submitRemove.classList.add("light")
-  inputText.classList.remove("dark")
-  inputText.classList.add("light")
-  changeDark.classList.add("hide")
-  changeLight.classList.remove("hide")
-})
 
 
 inputBtn.addEventListener("click",  function () {
@@ -71,7 +50,7 @@ inputBtn.addEventListener("click",  function () {
 
     const remove = document.createElement("button");
     remove.innerHTML = "Delete"
-    remove.className = "remove-btn"
+    remove.className = "remove-btn dark"
 
     p.textContent = inputText.value;
     li.appendChild(check);
@@ -103,6 +82,7 @@ inputBtn.addEventListener("click",  function () {
         todoBackground.style.filter = "blur(0)"
       })
     })
+    
 
     inputText.value = "";
   // const todos = [
@@ -116,5 +96,43 @@ inputBtn.addEventListener("click",  function () {
   //     }
   //   }
   // ]
+  changeLight.addEventListener("click", () => {
+    main.classList.remove("light")
+    main.classList.add("dark")
+    submitRemove.classList.remove("light")
+    submitRemove.classList.add("dark")
+    changeLight.classList.add("hide")
+    inputText.classList.remove("light")
+    inputText.classList.add("dark")
+    changeDark.classList.remove("hide")
+    removeConfirm.classList.remove("dark")
+    removeConfirm.classList.add("light")
+    removeCancel.classList.remove("dark")
+    removeCancel.classList.add("light")
+    remove.classList.remove("dark")
+    remove.classList.add("light")
+    inputBtn.classList.remove("dark")
+    inputBtn.classList.add("light")
+  })
+  
+  changeDark.addEventListener("click", () => {
+    main.classList.remove("dark")
+    main.classList.add("light")
+    submitRemove.classList.remove("dark")
+    submitRemove.classList.add("light")
+    inputText.classList.remove("dark")
+    inputText.classList.add("light")
+    changeDark.classList.add("hide")
+    changeLight.classList.remove("hide")
+    removeConfirm.classList.remove("light")
+    removeConfirm.classList.add("dark")
+    removeCancel.classList.remove("light")
+    removeCancel.classList.add("dark")
+    remove.classList.remove("light")
+    remove.classList.add("dark")
+    inputBtn.classList.remove("light")
+    inputBtn.classList.add("dark")
+  })
   }
 });
+
